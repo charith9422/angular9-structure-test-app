@@ -1,0 +1,24 @@
+<ngx-spinner bdOpacity=0.9 bdColor="#333" size="medium" color="#fff" type="square-loader" [fullScreen]="true">
+    <p style="color: white"> Loading... </p>
+</ngx-spinner>
+<div class="container">
+    
+    <div *ngFor="let match of matches.matches">
+        <div class="card mt-3">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+                <h5 class="card-title" >{{match.team-1}}</h5>
+                <p class="card-text">{{match.date | date}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </div>
+</div>
